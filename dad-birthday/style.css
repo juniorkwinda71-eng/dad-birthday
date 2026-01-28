@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.main-heading {
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.intro {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+/* GRID LAYOUT */
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+/* PHOTOS */
+.photos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photos img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* MESSAGE */
+.message-box {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.message-box p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.strong-message {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffdf99;
+}
+
+.from {
+    margin-top: 40px;
+    font-size: 1.2rem;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffd700;
+}
+
+/* RESPONSIVE (PHONES) */
+@media (max-width: 900px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photos {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .photos img {
+        max-width: 45%;
+    }
+}
